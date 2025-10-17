@@ -76,7 +76,7 @@ const TesTimonial = ({
           <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
         </div>
       </div>
-      <div className="flex justify-between mt-8 md:mt-0">
+      <div className="flex justify-between mt-8 md:mt-0 transition duration-150 ease-in-out">
         <button
           onClick={handlePrev}
           title="left arrow"
@@ -96,7 +96,7 @@ const TesTimonial = ({
 
     {/* Show only the current testimonial */}
     <div className="mt-8">
-      <div className="group p-8  dark:border-gray-700 transition-colors duration-300 hover:bg-blue-400 hover:text-white">
+      <div className="group p-8  dark:border-gray-700 transition-colors duration-300 hover:scale-90  hover:bg-blue-500  rounded-[20px] inset-shadow-blue-500 transition delay-300 duration-500 ease-in-out inset-shadow-sm hover:text-white">
         <p className="leading-loose transition-colors duration-300">
           {testimonials[currentIndex].text}
         </p>
